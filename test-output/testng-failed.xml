@@ -10,6 +10,7 @@
           <include name="UserLoginFailWrongPassword"/>
           <include name="UserLoginFailWrongEmail"/>
           <include name="stopDriver"/>
+          <include name="UserCanLoginSuccssfully"/>
           <include name="screenshotOnFailure"/>
         </methods>
       </class> <!-- tests.LoginPageTest -->
