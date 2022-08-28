@@ -3,17 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.LoginPageTest">
+      <class name="tests.ForgetPasswordPageTest">
         <methods>
+          <include name="openForgetPasswordPage"/>
           <include name="startDriver"/>
-          <include name="UserLoginFailWrongEmailWrongPass"/>
-          <include name="UserLoginFailWrongPassword"/>
-          <include name="UserLoginFailWrongEmail"/>
           <include name="stopDriver"/>
-          <include name="UserCanLoginSuccssfully"/>
           <include name="screenshotOnFailure"/>
+          <include name="UserEnterInvalidEmail"/>
         </methods>
-      </class> <!-- tests.LoginPageTest -->
+      </class> <!-- tests.ForgetPasswordPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

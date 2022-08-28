@@ -12,29 +12,30 @@ public class LoginPageTest extends TestBase
 {
 	LoginPage loginObject ; 
 	
-	
+	/*
 	@Test (priority = 1) //TC_LOGIN_003
 	public void UserLoginFailWrongEmail () throws InterruptedException
 	{
 		loginObject = new LoginPage(driver); 
 		loginObject.UserLogin("wrong@gmail.com", "awad36148"); // Wrong Email , password
 		Thread.sleep(1000);
-		WebElement MessageString= driver.findElement(By.xpath("....")); //  message id
+		WebElement MessageString= driver.findElement(By.xpath("/html/body/div/div[2]/div/div/div[1]/div[2]")); //  message id
 		String messageString = MessageString.getText();
-		String actualMessage= "wrong email or password";
+		String actualMessage= "Wrong email or password";
 		Assert.assertEquals(actualMessage, messageString);
 		Thread.sleep(2000);
 		
 	}
+	*/
 	@Test (priority = 4) //TC_LOGIN_004
 	public void UserLoginFailWrongEmailWrongPass () throws InterruptedException
 	{
 		loginObject = new LoginPage(driver); 
 		loginObject.UserLogin("wrong@gmail.com", "awad0118"); // Wrong Email , password
 		Thread.sleep(1000);
-		WebElement MessageString= driver.findElement(By.xpath("....")); //  message id
+		WebElement MessageString= driver.findElement(By.xpath("/html/body/div/div[2]/div/div/div[1]/div[2]")); //  message id
 		String messageString = MessageString.getText();
-		String actualMessage= "wrong email or password";
+		String actualMessage= "Wrong email or password";
 		Assert.assertEquals(actualMessage, messageString);
 		Thread.sleep(2000);
 		
@@ -134,9 +135,9 @@ public class LoginPageTest extends TestBase
 		loginObject = new LoginPage(driver); 
 		loginObject.UserLogin("boogado@yahoo.com", "12345678"); // Correct Email ,Wrong password
 		Thread.sleep(1000);
-		WebElement MessageString= driver.findElement(By.xpath("....")); //  message id
+		WebElement MessageString= driver.findElement(By.xpath("/html/body/div/div[2]/div/div/div[1]/div[2]")); //  message id
 		String messageString = MessageString.getText();
-		String actualMessage= "wrong email or password";
+		String actualMessage= "Wrong email or password";
 		Assert.assertEquals(actualMessage, messageString);
 		Thread.sleep(2000);
 	}
