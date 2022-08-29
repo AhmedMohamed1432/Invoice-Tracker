@@ -102,13 +102,14 @@ public class LoginPageTest extends TestBase
 		String actualMessage= "Please Enter a valid Password";
 		Assert.assertEquals(actualMessage, messageString);
 		Thread.sleep(2000);
-	}/*  Waiting for developers info
+	}
+	
 	@Test (priority = 10) //TC_LOGIN_010
 	public void UserLoginExpiredPassword () throws InterruptedException
 	{
 		loginObject = new LoginPage(driver); 
-		loginObject.UserLogin("boogado@yahoo.com", "....."); 
-		WebElement MessageString= driver.findElement(By.xpath("....")); //  message id
+		loginObject.UserLogin("boogado6@yahoo.com", "awad36148"); 
+		WebElement MessageString= driver.findElement(By.xpath("/html/body/div/div[2]/div/div/div[1]/div[2]")); //  message id
 		String messageString = MessageString.getText();
 		String actualMessage= "your password is expired. please, contact your adminstrator";
 		Assert.assertEquals(actualMessage, messageString);
@@ -119,22 +120,22 @@ public class LoginPageTest extends TestBase
 	public void UserLoginDisabledUser () throws InterruptedException
 	{
 		loginObject = new LoginPage(driver); 
-		loginObject.UserLogin("....", "....."); 
-		WebElement MessageString= driver.findElement(By.xpath("....")); //  message id
+		loginObject.UserLogin("boogado5@yahoo.com", "awad36148"); 
+		WebElement MessageString= driver.findElement(By.xpath("/html/body/div/div[2]/div/div/div[1]/div[2]")); //  message id
 		String messageString = MessageString.getText();
 		String actualMessage= "user is disabled. please, contact your adminstrator.";
 		Assert.assertEquals(actualMessage, messageString);
 		Thread.sleep(2000);
 		
 	}
-	*/
+
 	
 	@Test (priority = 2) //TC_LOGIN_002
 	public void UserLoginFailWrongPassword () throws InterruptedException
 	{
 		loginObject = new LoginPage(driver); 
 		loginObject.UserLogin("boogado@yahoo.com", "12345678"); // Correct Email ,Wrong password
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		WebElement MessageString= driver.findElement(By.xpath("/html/body/div/div[2]/div/div/div[1]/div[2]")); //  message id
 		String messageString = MessageString.getText();
 		String actualMessage= "Wrong email or password";

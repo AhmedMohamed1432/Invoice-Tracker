@@ -28,7 +28,8 @@ public class ForgetPasswordPageTest extends TestBase{
 		Thread.sleep(1000);
 		WebElement MessageString= driver.findElement(By.xpath("/html/body/div/div[2]/div/div/div[1]/div[2]")); //  message id
 		String messageString = MessageString.getText();
-		String actualMessage= "If the Entered Email is valied a reset password mail will be sent shotly.";
+		//String actualMessage= "If the Entered Email is valied a reset password mail will be sent shotly.";
+		String actualMessage= "We sent you an email";
 		Assert.assertEquals(actualMessage, messageString);
 		Thread.sleep(2000);
 		
