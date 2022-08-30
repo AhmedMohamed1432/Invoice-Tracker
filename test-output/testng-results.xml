@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-28T22:52:09 EET" name="Default suite" finished-at="2022-08-28T22:52:25 EET" duration-ms="15508">
+  <suite started-at="2022-08-30T19:59:45 EET" name="Default suite" finished-at="2022-08-30T20:00:30 EET" duration-ms="44817">
     <groups>
     </groups>
-    <test started-at="2022-08-28T22:52:09 EET" name="Default test" finished-at="2022-08-28T22:52:25 EET" duration-ms="15508">
-      <class name="tests.ForgetPasswordPageTest">
-        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.ForgetPasswordPageTest@2053d869]" started-at="2022-08-28T22:52:04 EET" name="startDriver" finished-at="2022-08-28T22:52:09 EET" duration-ms="5323" status="PASS">
+    <test started-at="2022-08-30T19:59:45 EET" name="Default test" finished-at="2022-08-30T20:00:30 EET" duration-ms="44817">
+      <class name="tests.LoginPageTest">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.LoginPageTest@49c7b90e]" started-at="2022-08-30T19:59:40 EET" name="startDriver" finished-at="2022-08-30T19:59:45 EET" duration-ms="4797" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,75 +18,176 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method is-config="true" signature="openForgetPasswordPage()[pri:0, instance:tests.ForgetPasswordPageTest@2053d869]" started-at="2022-08-28T22:52:09 EET" name="openForgetPasswordPage" finished-at="2022-08-28T22:52:11 EET" duration-ms="2296" status="PASS">
+        <test-method signature="UserLoginFailWrongEmail()[pri:1, instance:tests.LoginPageTest@49c7b90e]" started-at="2022-08-30T19:59:45 EET" name="UserLoginFailWrongEmail" finished-at="2022-08-30T19:59:50 EET" duration-ms="4423" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openForgetPasswordPage -->
-        <test-method signature="UserEnterblankEmail()[pri:1, instance:tests.ForgetPasswordPageTest@2053d869]" started-at="2022-08-28T22:52:11 EET" name="UserEnterblankEmail" finished-at="2022-08-28T22:52:14 EET" duration-ms="2281" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserEnterblankEmail -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ForgetPasswordPageTest@2053d869]" started-at="2022-08-28T22:52:14 EET" name="screenshotOnFailure" finished-at="2022-08-28T22:52:14 EET" duration-ms="0" status="PASS">
+        </test-method> <!-- UserLoginFailWrongEmail -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPageTest@49c7b90e]" started-at="2022-08-30T19:59:50 EET" name="screenshotOnFailure" finished-at="2022-08-30T19:59:50 EET" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UserEnterblankEmail status=SUCCESS method=ForgetPasswordPageTest.UserEnterblankEmail()[pri:1, instance:tests.ForgetPasswordPageTest@2053d869] output={null}]]]>
+                <![CDATA[[TestResult name=UserLoginFailWrongEmail status=SUCCESS method=LoginPageTest.UserLoginFailWrongEmail()[pri:1, instance:tests.LoginPageTest@49c7b90e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="UserEnterInvalidEmail()[pri:2, instance:tests.ForgetPasswordPageTest@2053d869]" started-at="2022-08-28T22:52:14 EET" name="UserEnterInvalidEmail" finished-at="2022-08-28T22:52:17 EET" duration-ms="3326" status="PASS">
+        <test-method signature="UserLoginFailWrongPassword()[pri:2, instance:tests.LoginPageTest@49c7b90e]" started-at="2022-08-30T19:59:50 EET" name="UserLoginFailWrongPassword" finished-at="2022-08-30T19:59:54 EET" duration-ms="4366" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserEnterInvalidEmail -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ForgetPasswordPageTest@2053d869]" started-at="2022-08-28T22:52:17 EET" name="screenshotOnFailure" finished-at="2022-08-28T22:52:17 EET" duration-ms="0" status="PASS">
+        </test-method> <!-- UserLoginFailWrongPassword -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPageTest@49c7b90e]" started-at="2022-08-30T19:59:54 EET" name="screenshotOnFailure" finished-at="2022-08-30T19:59:54 EET" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UserEnterInvalidEmail status=SUCCESS method=ForgetPasswordPageTest.UserEnterInvalidEmail()[pri:2, instance:tests.ForgetPasswordPageTest@2053d869] output={null}]]]>
+                <![CDATA[[TestResult name=UserLoginFailWrongPassword status=SUCCESS method=LoginPageTest.UserLoginFailWrongPassword()[pri:2, instance:tests.LoginPageTest@49c7b90e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="UserEnterCorrectEmail()[pri:3, instance:tests.ForgetPasswordPageTest@2053d869]" started-at="2022-08-28T22:52:17 EET" name="UserEnterCorrectEmail" finished-at="2022-08-28T22:52:20 EET" duration-ms="3327" status="PASS">
+        <test-method signature="UserLoginFailWrongEmailWrongPass()[pri:4, instance:tests.LoginPageTest@49c7b90e]" started-at="2022-08-30T19:59:54 EET" name="UserLoginFailWrongEmailWrongPass" finished-at="2022-08-30T19:59:57 EET" duration-ms="3366" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserEnterCorrectEmail -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ForgetPasswordPageTest@2053d869]" started-at="2022-08-28T22:52:20 EET" name="screenshotOnFailure" finished-at="2022-08-28T22:52:20 EET" duration-ms="1" status="PASS">
+        </test-method> <!-- UserLoginFailWrongEmailWrongPass -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPageTest@49c7b90e]" started-at="2022-08-30T19:59:57 EET" name="screenshotOnFailure" finished-at="2022-08-30T19:59:57 EET" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UserEnterCorrectEmail status=SUCCESS method=ForgetPasswordPageTest.UserEnterCorrectEmail()[pri:3, instance:tests.ForgetPasswordPageTest@2053d869] output={null}]]]>
+                <![CDATA[[TestResult name=UserLoginFailWrongEmailWrongPass status=SUCCESS method=LoginPageTest.UserLoginFailWrongEmailWrongPass()[pri:4, instance:tests.LoginPageTest@49c7b90e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="UserGoBackToLogin()[pri:4, instance:tests.ForgetPasswordPageTest@2053d869]" started-at="2022-08-28T22:52:20 EET" name="UserGoBackToLogin" finished-at="2022-08-28T22:52:25 EET" duration-ms="4254" status="PASS">
+        <test-method signature="UserLoginFailSpecialCharEmail()[pri:5, instance:tests.LoginPageTest@49c7b90e]" started-at="2022-08-30T19:59:57 EET" name="UserLoginFailSpecialCharEmail" finished-at="2022-08-30T20:00:02 EET" duration-ms="4362" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserGoBackToLogin -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ForgetPasswordPageTest@2053d869]" started-at="2022-08-28T22:52:25 EET" name="screenshotOnFailure" finished-at="2022-08-28T22:52:25 EET" duration-ms="0" status="PASS">
+        </test-method> <!-- UserLoginFailSpecialCharEmail -->
+        <test-method signature="UserLoginFailNoSpecialCharEmail()[pri:6, instance:tests.LoginPageTest@49c7b90e]" started-at="2022-08-30T20:00:02 EET" name="UserLoginFailNoSpecialCharEmail" finished-at="2022-08-30T20:00:06 EET" duration-ms="4348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserLoginFailNoSpecialCharEmail -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPageTest@49c7b90e]" started-at="2022-08-30T20:00:02 EET" name="screenshotOnFailure" finished-at="2022-08-30T20:00:02 EET" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UserGoBackToLogin status=SUCCESS method=ForgetPasswordPageTest.UserGoBackToLogin()[pri:4, instance:tests.ForgetPasswordPageTest@2053d869] output={null}]]]>
+                <![CDATA[[TestResult name=UserLoginFailSpecialCharEmail status=SUCCESS method=LoginPageTest.UserLoginFailSpecialCharEmail()[pri:5, instance:tests.LoginPageTest@49c7b90e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method is-config="true" signature="stopDriver()[pri:0, instance:tests.ForgetPasswordPageTest@2053d869]" started-at="2022-08-28T22:52:25 EET" name="stopDriver" finished-at="2022-08-28T22:52:28 EET" duration-ms="3682" status="PASS">
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPageTest@49c7b90e]" started-at="2022-08-30T20:00:06 EET" name="screenshotOnFailure" finished-at="2022-08-30T20:00:06 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserLoginFailNoSpecialCharEmail status=SUCCESS method=LoginPageTest.UserLoginFailNoSpecialCharEmail()[pri:6, instance:tests.LoginPageTest@49c7b90e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method signature="UserLoginFailBlankEmail()[pri:7, instance:tests.LoginPageTest@49c7b90e]" started-at="2022-08-30T20:00:06 EET" name="UserLoginFailBlankEmail" finished-at="2022-08-30T20:00:10 EET" duration-ms="4322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserLoginFailBlankEmail -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPageTest@49c7b90e]" started-at="2022-08-30T20:00:10 EET" name="screenshotOnFailure" finished-at="2022-08-30T20:00:10 EET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserLoginFailBlankEmail status=SUCCESS method=LoginPageTest.UserLoginFailBlankEmail()[pri:7, instance:tests.LoginPageTest@49c7b90e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method signature="UserLoginDisabledUser()[pri:8, instance:tests.LoginPageTest@49c7b90e]" started-at="2022-08-30T20:00:10 EET" name="UserLoginDisabledUser" finished-at="2022-08-30T20:00:15 EET" duration-ms="4333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserLoginDisabledUser -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPageTest@49c7b90e]" started-at="2022-08-30T20:00:15 EET" name="screenshotOnFailure" finished-at="2022-08-30T20:00:15 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserLoginDisabledUser status=SUCCESS method=LoginPageTest.UserLoginDisabledUser()[pri:8, instance:tests.LoginPageTest@49c7b90e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method signature="UserLoginFailBlankPassword()[pri:9, instance:tests.LoginPageTest@49c7b90e]" started-at="2022-08-30T20:00:15 EET" name="UserLoginFailBlankPassword" finished-at="2022-08-30T20:00:19 EET" duration-ms="4323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserLoginFailBlankPassword -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPageTest@49c7b90e]" started-at="2022-08-30T20:00:19 EET" name="screenshotOnFailure" finished-at="2022-08-30T20:00:19 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserLoginFailBlankPassword status=SUCCESS method=LoginPageTest.UserLoginFailBlankPassword()[pri:9, instance:tests.LoginPageTest@49c7b90e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method signature="UserLoginExpiredPassword()[pri:10, instance:tests.LoginPageTest@49c7b90e]" started-at="2022-08-30T20:00:19 EET" name="UserLoginExpiredPassword" finished-at="2022-08-30T20:00:23 EET" duration-ms="4311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserLoginExpiredPassword -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPageTest@49c7b90e]" started-at="2022-08-30T20:00:23 EET" name="screenshotOnFailure" finished-at="2022-08-30T20:00:23 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserLoginExpiredPassword status=SUCCESS method=LoginPageTest.UserLoginExpiredPassword()[pri:10, instance:tests.LoginPageTest@49c7b90e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method signature="UserLoginFailBlankEmailBlankPassword()[pri:11, instance:tests.LoginPageTest@49c7b90e]" started-at="2022-08-30T20:00:23 EET" name="UserLoginFailBlankEmailBlankPassword" finished-at="2022-08-30T20:00:28 EET" duration-ms="4318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserLoginFailBlankEmailBlankPassword -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPageTest@49c7b90e]" started-at="2022-08-30T20:00:28 EET" name="screenshotOnFailure" finished-at="2022-08-30T20:00:28 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserLoginFailBlankEmailBlankPassword status=SUCCESS method=LoginPageTest.UserLoginFailBlankEmailBlankPassword()[pri:11, instance:tests.LoginPageTest@49c7b90e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method signature="UserCanLoginSuccssfully()[pri:12, instance:tests.LoginPageTest@49c7b90e]" started-at="2022-08-30T20:00:28 EET" name="UserCanLoginSuccssfully" finished-at="2022-08-30T20:00:30 EET" duration-ms="2306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanLoginSuccssfully -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.LoginPageTest@49c7b90e]" started-at="2022-08-30T20:00:30 EET" name="screenshotOnFailure" finished-at="2022-08-30T20:00:30 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserCanLoginSuccssfully status=SUCCESS method=LoginPageTest.UserCanLoginSuccssfully()[pri:12, instance:tests.LoginPageTest@49c7b90e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="stopDriver()[pri:0, instance:tests.LoginPageTest@49c7b90e]" started-at="2022-08-30T20:00:30 EET" name="stopDriver" finished-at="2022-08-30T20:00:34 EET" duration-ms="3733" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
-      </class> <!-- tests.ForgetPasswordPageTest -->
+      </class> <!-- tests.LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -12,13 +12,12 @@ public class LoginPageTest extends TestBase
 {
 	LoginPage loginObject ; 
 	
-	/*
 	@Test (priority = 1) //TC_LOGIN_003
 	public void UserLoginFailWrongEmail () throws InterruptedException
 	{
 		loginObject = new LoginPage(driver); 
 		loginObject.UserLogin("wrong@gmail.com", "awad36148"); // Wrong Email , password
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		WebElement MessageString= driver.findElement(By.xpath("/html/body/div/div[2]/div/div/div[1]/div[2]")); //  message id
 		String messageString = MessageString.getText();
 		String actualMessage= "Wrong email or password";
@@ -26,7 +25,7 @@ public class LoginPageTest extends TestBase
 		Thread.sleep(2000);
 		
 	}
-	*/
+	
 	@Test (priority = 4) //TC_LOGIN_004
 	public void UserLoginFailWrongEmailWrongPass () throws InterruptedException
 	{
@@ -45,7 +44,7 @@ public class LoginPageTest extends TestBase
 	{
 		loginObject = new LoginPage(driver); 
 		loginObject.UserLogin("wrong#$@gmail.com", "awad36148"); // Wrong Email , password
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		WebElement MessageString= driver.findElement(By.xpath("/html/body/div/div[1]/div[1]/div/div[2]/div/form/div[1]/p")); //  message id
 		String messageString = MessageString.getText();
 		String actualMessage= "Invalid email address";
@@ -57,7 +56,7 @@ public class LoginPageTest extends TestBase
 	{
 		loginObject = new LoginPage(driver); 
 		loginObject.UserLogin("wronggmail.com", "awad36148"); // Wrong Email , password
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		WebElement MessageString= driver.findElement(By.xpath("/html/body/div/div[1]/div[1]/div/div[2]/div/form/div[1]/p")); //  message id
 		String messageString = MessageString.getText();
 		String actualMessage= "Invalid email address";
@@ -70,7 +69,7 @@ public class LoginPageTest extends TestBase
 	{
 		loginObject = new LoginPage(driver); 
 		loginObject.UserLogin("", "awad36148"); // Wrong Email , password
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		WebElement MessageString= driver.findElement(By.xpath("/html/body/div/div[1]/div[1]/div/div[2]/div/form/div[1]/p")); //  message id
 		String messageString = MessageString.getText();
 		String actualMessage= "Please Enter a valid Email";
@@ -78,12 +77,12 @@ public class LoginPageTest extends TestBase
 		Thread.sleep(2000);
 		
 	}
-	@Test (priority = 8) //TC_LOGIN_008
+	@Test (priority = 11) //TC_LOGIN_008
 	public void UserLoginFailBlankEmailBlankPassword () throws InterruptedException
 	{
 		loginObject = new LoginPage(driver); 
 		loginObject.UserLogin("", ""); // Wrong Email , password
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		WebElement MessageString= driver.findElement(By.xpath("/html/body/div/div[1]/div[1]/div/div[2]/div/form/div[1]/p")); //  message id
 		String messageString = MessageString.getText();
 		String actualMessage= "Please Enter a valid Email";
@@ -96,7 +95,7 @@ public class LoginPageTest extends TestBase
 	{
 		loginObject = new LoginPage(driver); 
 		loginObject.UserLogin("boogado@yahoo.com", ""); // Wrong Email , password
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		WebElement MessageString= driver.findElement(By.xpath("/html/body/div/div[1]/div[1]/div/div[2]/div/form/div[2]/p")); //  message id
 		String messageString = MessageString.getText();
 		String actualMessage= "Please Enter a valid Password";
@@ -109,21 +108,23 @@ public class LoginPageTest extends TestBase
 	{
 		loginObject = new LoginPage(driver); 
 		loginObject.UserLogin("boogado6@yahoo.com", "awad36148"); 
+		Thread.sleep(2000);
 		WebElement MessageString= driver.findElement(By.xpath("/html/body/div/div[2]/div/div/div[1]/div[2]")); //  message id
 		String messageString = MessageString.getText();
-		String actualMessage= "your password is expired. please, contact your adminstrator";
+		String actualMessage= "Password is expired. Please contact your administrator";
 		Assert.assertEquals(actualMessage, messageString);
 		Thread.sleep(2000);
 		
 	}
-	@Test (priority = 11) //TC_LOGIN_0011
+	@Test (priority = 8) //TC_LOGIN_0011
 	public void UserLoginDisabledUser () throws InterruptedException
 	{
 		loginObject = new LoginPage(driver); 
 		loginObject.UserLogin("boogado5@yahoo.com", "awad36148"); 
+		Thread.sleep(2000);
 		WebElement MessageString= driver.findElement(By.xpath("/html/body/div/div[2]/div/div/div[1]/div[2]")); //  message id
 		String messageString = MessageString.getText();
-		String actualMessage= "user is disabled. please, contact your adminstrator.";
+		String actualMessage= "User is disabled. Please contact your administrator";
 		Assert.assertEquals(actualMessage, messageString);
 		Thread.sleep(2000);
 		
